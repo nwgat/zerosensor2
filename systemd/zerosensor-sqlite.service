@@ -1,0 +1,13 @@
+[Unit]
+Description=ZeroSensor Temperature and Humidty Logger
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/zerosensor2
+ExecStart=/usr/bin/python /home/pi/zerosensor2/zerosensor-sqlite.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

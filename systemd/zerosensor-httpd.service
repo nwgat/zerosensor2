@@ -1,0 +1,13 @@
+[Unit]
+Description=ZeroSensor http server on port 8080
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/zerosensor2
+ExecStart=/usr/bin/python /home/pi/zerosensor2/zerosensor-httpd.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
