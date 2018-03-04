@@ -6,7 +6,7 @@ Temperature and Humidity Monitor for HTU21U &amp; Pi Zero
 * zerosensor-httpd.py will start a http server on 8080
 
 
-# Required Software
+**Required Software**
 
 * abyz pigpiod http://abyz.me.uk/rpi/pigpio/pigpiod.html
-*dalexgray htu21df https://github.com/dalexgray/RaspberryPI_HTU21DF
+* dalexgray htu21df https://github.com/dalexgray/RaspberryPI_HTU21DF
